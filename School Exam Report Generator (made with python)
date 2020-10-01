@@ -1,0 +1,142 @@
+while(True) :
+        pre = input("School Report Generator\nPlease The Correct Information For Correct Valuation\n(note: wrong data can lead you to do all the work again from the beginning)\n(example: if the age is 9 then type '9' not '09' and if the age is 16 type '16')\n\nNow Press ENTER To Start The Programme : ")
+        print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+        session = str(input("\n\nSession (example: 2010-2011) : "))
+        name = str(input("\n\nPlease type the full name of the student in block letter : "))
+        fname = str(input("\n\nPlease type the full name of the father of the student in block letter : "))
+        mother = str(input("\n\nPlease type the full name of the mother of the student in block letter : "))
+        dname = str(input("\n\nPlease type the full name of the dog\cat\pet of the student in block letter(If not the type 'NA' : "))
+        age = int(input("\n\nPlease type the age of the student : "))
+        clas = int(input("\n\nPlease type the class of the student : "))
+        section = int(input("\n\nPlease type the section of the student : "))
+        present  = int(input("\n\nPlease type the number of days the student was present in a year : "))
+        totalpresent = int(input("\n\nPlease type the total number of days the school was held in a year : "))
+        print("\n\n\nNow The Marks is Of The student Has To Be Added (note: please add the correct marks or else the programme will stop working )")
+        fm = int(input("The FM or Total Marks For Each Subject : "))
+        maths = int(input("Maths Marks : "))
+        science = int(input("Science Marks : "))
+        english = int(input("English Marks : "))
+        lang2 = str(input("Which is the second language for the student (Bengali or Hindi)? : "))
+        if lang2 == 'hindi' or 'Hindi' :
+                hindi = int(input("Hindi Marks : "))
+        else :
+                hindi = int(input("Bengali Marks : "))
+        sst = int(input("Social Science Marks : "))
+        print("========================================================================================================================================================================================================================================")
+        print("\n\n\nReport Card Of " , name , ' Of Year ' , session )
+        print("\nName Of The Student - " , name )
+        print("\nFather's Name - " , fname )
+        print("\nMother's Name - " , mother )
+        print("\nPet's Name - " , dname )
+        print("\nClass : " , clas , "              Section : " , section )
+        print(name , ' was present for ' , present , ' days out of ' , totalpresent ,' so ' , name , ' was absent for ' , totalpresent - present , ' days thus attended ' , (present / totalpresent) * 100 , '% of the classes' )
+        print("\n\n\nScience : " , science ,  " out of " , fm  , "\nPercentage: " , (science / fm) * 100 , "%")
+        if (science / fm) * 100 > 100 :
+                print(" Your Input Was Wrong ")
+        elif (science / fm) * 100 > 90 :
+                print("Grade : A ")
+        elif (science / fm) * 100 > 80 :
+                print("Grade : B ")
+        elif (science / fm) * 100 > 70 :
+                print("Grade : C ")
+        elif (science / fm) * 100 > 50 :
+                print("Grade : D  ")
+        elif (science / fm) * 100 > 30 :
+                print("Grade : E ")
+        elif (science / fm) * 100 > 0  :
+                print("Grade : Failed")
+        else :
+                print(" Your Input Was Wrong ")
+        print("\n\nMaths : ", maths , " out of ", fm, "\nPercentage: ", (maths / fm) * 100, "%")
+        if (maths / fm) * 100 > 100:
+                print(" Your Input Was Wrong ")
+        elif (maths / fm) * 100 > 90:
+                print("Grade : A ")
+        elif (maths / fm) * 100 > 80:
+                print("Grade : B ")
+        elif (maths / fm) * 100 > 70:
+                print("Grade : C ")
+        elif (maths / fm) * 100 > 50:
+                print("Grade : D  ")
+        elif (maths / fm) * 100 > 30:
+                print("Grade : E ")
+        elif (maths / fm) * 100 > 0  :
+                print("Grade : Failed")
+        else:
+                print(" Your Input Was Wrong ")
+        print("\n\n" ,lang2 , ' : ' , hindi , " out of ", fm, "\nPercentage: ", (hindi / fm) * 100, "%")
+        if (hindi / fm) * 100 > 100:
+                print(" Your Input Was Wrong ")
+        elif (hindi / fm) * 100 > 90:
+                print("Grade : A ")
+        elif (hindi / fm) * 100 > 80:
+                print("Grade : B ")
+        elif (hindi / fm) * 100 > 70:
+                print("Grade : C ")
+        elif (hindi / fm) * 100 > 50:
+                print("Grade : D  ")
+        elif (hindi / fm) * 100 > 30:
+                print("Grade : E ")
+        elif (hindi / fm) * 100 > 0  :
+                print("Grade : Failed")
+        else:
+                print(" Your Input Was Wrong ")
+        print("\n\nEnglish : ", english , " out of ", fm, "\nPercentage: ", (english / fm) * 100, "%")
+        if (english / fm) * 100 > 100:
+                print(" Your Input Was Wrong ")
+        elif (english / fm) * 100 > 90:
+                print("Grade : A ")
+        elif (english / fm) * 100 > 80:
+                print("Grade : B ")
+        elif (english / fm) * 100 > 70:
+                print("Grade : C ")
+        elif (english / fm) * 100 > 50:
+                print("Grade : D  ")
+        elif (english / fm) * 100 > 30:
+                print("Grade : E ")
+        elif (english / fm) * 100 > 0  :
+                print("Grade : Failed")
+        else:
+                print(" Your Input Was Wrong ")
+        print("\n\nSocial Science  : ", sst , " out of ", fm, "\nPercentage: ", (sst / fm) * 100, "%")
+        if (sst / fm) * 100 > 100:
+                print(" Your Input Was Wrong ")
+        elif (sst / fm) * 100 > 90:
+                print("Grade : A ")
+        elif (sst / fm) * 100 > 80:
+                print("Grade : B ")
+        elif (sst / fm) * 100 > 70:
+                print("Grade : C ")
+        elif (sst / fm) * 100 > 50:
+                print("Grade : D  ")
+        elif (sst / fm) * 100 > 30:
+                print("Grade : E ")
+        elif (sst / fm) * 100 > 0  :
+                print("Grade : Failed")
+        else:
+                print(" Your Input Was Wrong ")
+        print("\n\n\nTOTAL MARKS OBTAINED : " , science + sst + hindi + maths + english , 'OUT OF ' , fm * 5 )
+        print("\nTOTAL PERCENTAGE : " , (science + sst + hindi + maths + english) / (fm * 5) *  100 , '%' )
+        if (science + sst + hindi + maths + english) / (fm * 5) *  100 > 100:
+                print(" Your Input Was Wrong ")
+        elif (science + sst + hindi + maths + english) / (fm * 5) *  100 > 90:
+                print("Grade : A ")
+        elif (science + sst + hindi + maths + english) / (fm * 5) *  100 > 80:
+                print("Grade : B ")
+        elif (science + sst + hindi + maths + english) / (fm * 5) *  100 > 70:
+                print("Grade : C ")
+        elif (science + sst + hindi + maths + english) / (fm * 5) *  100 > 50:
+                print("Grade : D  ")
+        elif (science + sst + hindi + maths + english) / (fm * 5) *  100 > 30:
+                print("Grade : E ")
+        elif (science + sst + hindi + maths + english) / (fm * 5) *  100 > 0  :
+                print("Grade : Failed")
+        else:
+                print(" Your Input Was Wrong ")
+        run = input("Do you want to run the programe again? If yes then type (yes) else press the enter button : ")
+        if run == "yes":
+                continue
+        else:
+                break
+print("Thank You For Using This Programme\nDeveloped by Arya Chakraborty")
+print("================================================================================================================================================================================================================")

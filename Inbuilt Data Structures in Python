@@ -1,0 +1,16 @@
+# Python program to illustrate 
+# A simple list 
+
+# Declaring a list 
+L = [1, "a" , "string" , 1+2] 
+print L 
+
+# add 6 to the above list 
+L.append(6) 
+print L 
+
+# pop deletes the last element of the list 
+L.pop() 
+print L 
+
+print L[1] 
